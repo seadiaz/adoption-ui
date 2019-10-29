@@ -1,4 +1,5 @@
 import * as actionTypes from './actions'
+import * as adoptionType from './actions/adoption'
 
 const initialState = {
     selectedTool: null,
@@ -10,7 +11,7 @@ const reducer = (state = initialState, action) => {
     if (action.type === actionTypes.SELECT_TOOL) {
         return {
             ...state,
-            selectedTool: action.value.name
+            selectedTool: action.value
         }
     }
     if (action.type === actionTypes.RECEIVE_TOOLS) {
@@ -19,6 +20,30 @@ const reducer = (state = initialState, action) => {
             tools: {
                 items: action.items,
                 receivedAt: action.receivedAt
+            }
+        }
+    }
+    if (action.type === adoptionType.REQUEST_ADOPTION) {
+        return {
+            ...state,
+            selectedTool: {
+                ...state.selectedTool,
+                ...action.item
+            },
+            tools: {
+                ...state.tools
+            }
+        }
+    }
+    if (action.type === adoptionType.RECEIVE_ADOPTION) {
+        return {
+            ...state,
+            selectedTool: {
+                ...state.selectedTool,
+                adoption: action.item.adoption
+            },
+            tools: {
+                ...state.tools
             }
         }
     }

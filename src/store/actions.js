@@ -1,9 +1,5 @@
 export const SELECT_TOOL = 'SELECT_TOOL'
 
-export const selectTool = (item) => {
-    return { type: SELECT_TOOL, value: item }
-}
-
 export const REQUEST_TOOLS = 'REQUEST_TOOLS'
 const requestTools = () => {
     return {
@@ -23,7 +19,6 @@ function receivePosts(json) {
 
 export const fetchTools = () => {
     return (dispatch) => {
-        console.log('DOG')
         dispatch(requestTools())
         return fetch(`http://localhost:3000/tools`)
             .then(response => response.json())

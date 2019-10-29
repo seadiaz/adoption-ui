@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import Tool from "../components/Tools/Tool/Tool"
 import "./App.css"
 import { connect } from 'react-redux'
-import { selectTool } from '../store/actions'
+import { selectTool } from '../store/actions/adoption'
+import Adoption from "../components/Adoption/Adoption"
 
 class App extends Component {
   state = {
@@ -19,10 +20,15 @@ class App extends Component {
       )
     })
 
+    const adoption = !this.props.selectedTool ? null :
+      <Adoption
+        toolName={this.props.selectedTool.name}
+        adoption={this.props.selectedTool.adoption} />
+
     return (
       <div className='App'>
         <h1>This is the ROOT component</h1>
-        <h2>Selected tool: {this.props.selectedTool}</h2>
+        {adoption}
         {tools}
       </div>
     )
