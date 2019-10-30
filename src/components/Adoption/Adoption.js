@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import Adopters from './Adopters/Adopters'
 
 class Adoption extends Component {
     render() {
         return (
-            <p>The adoption level for <b>{this.props.toolName}</b> is: <b>{this.props.adoption}%</b></p>
+            <Fragment>
+                <div className="f-subheadline lh-title tc">Adoption level: <b>{this.props.adoption}%</b></div>
+                <Adopters />
+            </Fragment>
         )
     }
 }
