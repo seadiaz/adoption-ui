@@ -1,6 +1,5 @@
-import React, { Component } from "react"
-import Tool from "../components/Tools/Tool/Tool"
-import "./App.css"
+import React, { Component, Fragment } from "react"
+import Tools from "../components/Tools/Tools"
 import { connect } from 'react-redux'
 import { selectTool } from '../store/actions/adoption'
 import Adoption from "../components/Adoption/Adoption"
@@ -9,28 +8,26 @@ class App extends Component {
   state = {
 
   }
-  render() {
-    const tools = !this.props.tools ? null : this.props.tools.map(item => {
-      return (
-        <Tool
-          name={item.name}
-          key={item.id}
-          clicked={() => this.props.onSelectTool(item)}
-        />
-      )
-    })
 
+  render() {
     const adoption = !this.props.selectedTool ? null :
       <Adoption
         toolName={this.props.selectedTool.name}
         adoption={this.props.selectedTool.adoption} />
 
     return (
-      <div className='App'>
-        <h1>This is the ROOT component</h1>
-        {adoption}
-        {tools}
-      </div>
+      <Fragment>
+        <div className="fl w-100 w-20-ns bg-dark-gray h-100">
+          <Tools
+            className="pv4"
+            onSelectTool={this.props.onSelectTool}
+            tools={this.props.tools}
+          />
+        </div>
+        <div className="fl w-100 w-80-ns bg-light-blue h-100">
+          {adoption}
+        </div>
+      </Fragment>
     )
   }
 }
