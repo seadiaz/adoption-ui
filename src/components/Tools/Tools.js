@@ -8,7 +8,7 @@ class Tools extends Component {
     }
 
     render() {
-        const tools = !this.props.tools ? <div></div> : this.props.tools.map(item => {
+        return !this.props.tools ? <div></div> : this.props.tools.map(item => {
             return (
                 <Tool
                     name={item.name}
@@ -18,8 +18,6 @@ class Tools extends Component {
                 />
             )
         })
-
-        return tools
     }
 }
 

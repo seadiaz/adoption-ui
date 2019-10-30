@@ -18,11 +18,14 @@ class App extends Component {
     const adoption = !this.props.selectedTool ? null :
       <Adoption
         toolName={this.props.selectedTool.name}
-        adoption={this.props.selectedTool.adoption} />
+        adoption={this.props.selectedTool.adoption}
+        adopters={this.props.selectedTool.adopters}
+        absentees={this.props.selectedTool.absentees}
+      />
 
     return (
       <Fragment>
-        <div className="fl w-100 w-20-ns bg-dark-gray h-100">
+        <div className="fl w-100 w-20-ns bg-dark-gray h-100 overflow-y-auto">
           <Tools
             className="pv4"
             onSelectTool={this.props.onSelectTool}
@@ -30,7 +33,7 @@ class App extends Component {
             selectedTool={this.props.selectedTool}
           />
         </div>
-        <div className="fl w-100 w-80-ns bg-light-blue h-100">
+        <div className="fl w-100 w-80-ns bg-light-blue h-100 overflow-y-auto">
           {adoption}
         </div>
       </Fragment>

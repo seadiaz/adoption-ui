@@ -8,7 +8,6 @@ const requestTools = (item) => {
 
 export const RECEIVE_ADOPTION = 'RECEIVE_ADOPTION'
 function receiveAdoption(json) {
-    console.log(json)
     return {
         type: RECEIVE_ADOPTION,
         item: json,

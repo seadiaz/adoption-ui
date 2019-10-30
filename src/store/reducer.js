@@ -40,7 +40,9 @@ const reducer = (state = initialState, action) => {
             ...state,
             selectedTool: {
                 ...state.selectedTool,
-                adoption: action.item.adoption
+                adoption: action.item.adoption,
+                adopters: action.item.adopters,
+                absentees: action.item.absentees
             },
             tools: {
                 ...state.tools
