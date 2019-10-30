@@ -16,7 +16,7 @@ class Tool extends Component {
     }
 
     render() {
-        const classes = ['pa2', 'fl', 'w-100', 'tc', 'mb1', 'pointer']
+        const classes = ['pa2', 'fl', 'w-100', 'tc', 'mb1', 'pointer', 'dim']
         classes.push('bg-' + this.state.pickedColor)
         const selectMark = this.props.selected ? <ChevronRight className="relative right-0 fr" /> : null
         return (
