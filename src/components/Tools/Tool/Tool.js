@@ -19,7 +19,7 @@ class Tool extends Component {
                     {selectMark}
                     {this.props.name}
                 </h2>
-            </div >
+            </div>
         )
     }
 }

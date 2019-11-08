@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from "react"
 import Tools from "../../components/Tools/Tools"
 import { connect } from 'react-redux'
-import { selectTool } from '../../store/actions/adoption'
-import { fetchTools } from '../../store/actions'
+import { fetchTools, selectTool } from '../../store/actions/tools'
 import Adoption from "../../components/Adoption/Adoption"
 
 class Navigation extends Component {
@@ -18,11 +17,11 @@ class Navigation extends Component {
         const adoption = !this.props.selectedTool ? null :
             <Adoption
                 toolName={this.props.selectedTool.name}
-                adoption={this.props.selectedTool.adoption}
-                adopters={this.props.selectedTool.adopters}
-                absentees={this.props.selectedTool.absentees}
-                teamAdopters={this.props.selectedTool.teamAdopters}
-                teamAbsentees={this.props.selectedTool.teamAbsentees}
+                adoption={this.props.adoption.adoption}
+                adopters={this.props.adoption.adopters}
+                absentees={this.props.adoption.absentees}
+                teamAdopters={this.props.adoption.teamAdopters}
+                teamAbsentees={this.props.adoption.teamAbsentees}
             />
 
         return (
@@ -45,7 +44,8 @@ class Navigation extends Component {
 
 const mapStateToProps = state => {
     return {
-        selectedTool: state.selectedTool,
+        adoption: state.adoption,
+        selectedTool: state.tools.selectedTool,
         tools: state.tools.items
     }
 }

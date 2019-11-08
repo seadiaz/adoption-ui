@@ -1,0 +1,36 @@
+import * as adoptionType from '../actions/adoption'
+
+const initialState = {
+    fetching: false,
+    adoption: null,
+    adopters: null,
+    absentees: null,
+    teamAdoption: null,
+    teamAdopters: null,
+    teamAbsentees: null
+}
+
+const reducer = (state = initialState, action) => {
+    console.log('action:', action.type)
+    if (action.type === adoptionType.REQUEST_ADOPTION) {
+        return {
+            ...state,
+            fetching: true
+        }
+    }
+    if (action.type === adoptionType.RECEIVE_ADOPTION) {
+        return {
+            ...state,
+            fetching: false,
+            adoption: action.item.adoption,
+            adopters: action.item.adopters,
+            absentees: action.item.absentees,
+            teamAdoption: action.item.team_adoption,
+            teamAdopters: action.item.team_adopters,
+            teamAbsentees: action.item.team_absentees
+        }
+    }
+    return state
+}
+
+export default reducer;

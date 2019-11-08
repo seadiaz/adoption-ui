@@ -1,4 +1,15 @@
+import { fetchAdoption } from './adoption'
+
 export const SELECT_TOOL = 'SELECT_TOOL'
+export const selectTool = (item) => {
+    return (dispatch) => {
+        dispatch(fetchAdoption(item))
+        return dispatch({
+            type: SELECT_TOOL,
+            value: item
+        })
+    }
+}
 
 export const REQUEST_TOOLS = 'REQUEST_TOOLS'
 const requestTools = () => {
@@ -8,7 +19,7 @@ const requestTools = () => {
 }
 
 export const RECEIVE_TOOLS = 'RECEIVE_TOOLS'
-function receivePosts(json) {
+function receiveTools(json) {
     console.log(json)
     return {
         type: RECEIVE_TOOLS,
@@ -22,6 +33,6 @@ export const fetchTools = () => {
         dispatch(requestTools())
         return fetch(`http://localhost:3000/tools`)
             .then(response => response.json())
-            .then(json => dispatch(receivePosts(json)))
+            .then(json => dispatch(receiveTools(json)))
     }
 }

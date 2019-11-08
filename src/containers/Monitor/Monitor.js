@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react"
 import Tools from "../../components/Tools/Tools"
 import { connect } from 'react-redux'
-import { fetchTools } from '../../store/actions'
+import { fetchTools } from '../../store/actions/tools'
 
 class Monitor extends Component {
     state = {
