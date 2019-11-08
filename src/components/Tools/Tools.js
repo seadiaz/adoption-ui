@@ -7,13 +7,19 @@ class Tools extends Component {
         return true
     }
 
+    handleSelectTool = (item) => {
+        if (this.props.onSelectTool) {
+            this.props.onSelectTool(item)
+        }
+    }
+
     render() {
         return !this.props.tools ? <div></div> : this.props.tools.map(item => {
             return (
                 <Tool
                     name={item.name}
                     key={item.id}
-                    clicked={() => this.props.onSelectTool(item)}
+                    clicked={() => this.handleSelectTool(item)}
                     selected={!!this.props.selectedTool && this.props.selectedTool.id === item.id}
                 />
             )

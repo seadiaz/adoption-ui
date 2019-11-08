@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React, { PureComponent, Fragment } from 'react'
 
-class Absentees extends Component {
+class People extends PureComponent {
     render() {
-        const list = !this.props.absentees ? null : this.props.absentees.map((item) => {
+        const list = !this.props.list ? null : this.props.list.map((item) => {
             return (
                 <tr className="stripe-dark" key={item.email}>
                     <td className="pa3">{item.name}</td>
@@ -12,9 +12,9 @@ class Absentees extends Component {
         })
         return (
             <Fragment>
-                <div className="pa4">
+                <div className="ph4">
                     <div className="overflow-auto">
-                        <h3 className="f2 w-100 mw8 center mb1">Absentees</h3>
+                        <h3 className="f2 w-100 mw8 center mb1">Adopters</h3>
                         <table className="f6 w-100 mw8 center" cellSpacing="0">
                             <thead>
                                 <tr className="stripe-dark">
@@ -33,4 +33,4 @@ class Absentees extends Component {
     }
 }
 
-export default Absentees
+export default People
