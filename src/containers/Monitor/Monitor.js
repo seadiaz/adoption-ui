@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react"
-import Tools from "../../components/Tools/Tools"
+import React, { Component } from "react"
+import ToolsGrid from "../../components/ToolsGrid/ToolsGrid"
 import { connect } from 'react-redux'
 import { fetchTools } from '../../store/actions/tools'
 
@@ -14,14 +14,12 @@ class Monitor extends Component {
 
     render() {
         return (
-            <Fragment>
-                <div className="fl w-100 w-20-ns bg-dark-gray h-100 overflow-y-auto">
-                    <Tools
-                        className="pv4"
-                        tools={this.props.tools}
-                    />
-                </div>
-            </Fragment>
+            <div className="fl w-100 bg-dark-gray h-100 overflow-y-auto">
+                <ToolsGrid
+                    className="pv4"
+                    tools={this.props.tools}
+                />
+            </div>
         )
     }
 }

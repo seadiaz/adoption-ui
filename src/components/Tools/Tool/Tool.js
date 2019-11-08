@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ChevronRight } from 'react-feather';
+import { ChevronRight } from 'react-feather'
 import randomColor from 'randomcolor'
 
 class Tool extends Component {
