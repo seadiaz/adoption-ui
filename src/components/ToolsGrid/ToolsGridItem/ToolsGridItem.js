@@ -18,11 +18,11 @@ class ToolsGrid extends Component {
                 </h3>
                 <div
                     className="fl w-50 tc">
-                    Team: 10%
+                    Team: {this.props.teamAdoption}%
                 </div>
                 <div
                     className="fl w-50 tc">
-                    People: 30%
+                    People: {this.props.adoption}%
                 </div>
             </div>
         )

@@ -14,6 +14,8 @@ class ToolsGrid extends Component {
                 <GridItem
                     key={item.name}
                     name={item.name}
+                    adoption={item.adoption ? item.adoption.adoption : 0}
+                    teamAdoption={item.adoption ? item.adoption.teamAdoption : 0}
                 />
             )
         })

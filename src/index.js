@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker'
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux'
 import adoptionReducer from './store/reducers/adoption'
 import toolsReducer from './store/reducers/tools'
+import monitorReducer from './store/reducers/monitor'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 
@@ -14,7 +15,8 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const reducer = combineReducers({
     adoption: adoptionReducer,
-    tools: toolsReducer
+    tools: toolsReducer,
+    monitor: monitorReducer
 })
 const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
 

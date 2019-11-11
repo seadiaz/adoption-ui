@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import ToolsGrid from "../../components/ToolsGrid/ToolsGrid"
 import { connect } from 'react-redux'
-import { fetchTools } from '../../store/actions/tools'
+import { requestTools } from '../../store/actions/monitor'
 
 class Monitor extends Component {
     state = {
@@ -9,7 +9,7 @@ class Monitor extends Component {
     }
 
     componentDidMount() {
-        this.props.fetchTools()
+        this.props.requestTools()
     }
 
     render() {
@@ -26,14 +26,13 @@ class Monitor extends Component {
 
 const mapStateToProps = state => {
     return {
-        selectedTool: state.selectedTool,
-        tools: state.tools.items
+        tools: state.monitor.tools
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchTools: () => dispatch(fetchTools())
+        requestTools: () => dispatch(requestTools())
     }
 }
 

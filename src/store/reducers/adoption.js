@@ -11,7 +11,6 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    console.log('action:', action.type)
     if (action.type === adoptionType.REQUEST_ADOPTION) {
         return {
             ...state,
