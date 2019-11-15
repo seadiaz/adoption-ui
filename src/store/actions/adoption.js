@@ -1,7 +1,13 @@
+import { API_URL, API_KEY } from './global'
+
 export const fetchAdoption = (item) => {
     return (dispatch) => {
         dispatch(requestAdoption(item))
-        return fetch(`http://localhost:3000/tools/${item.id}/adoption`)
+        return fetch(`${API_URL}/tools/${item.id}/adoption`, {
+            headers: {
+                'Authentication': API_KEY
+            }
+        })
             .then(response => response.json())
             .then(json => dispatch(receiveAdoption(json)))
     }

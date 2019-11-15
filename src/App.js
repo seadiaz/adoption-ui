@@ -6,11 +6,12 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/adoption">
         <Switch>
           <Route path="/navigation" exact={true} component={Navigation} />
           <Route path="/monitor" exact={true} component={Monitor} />
-          <Redirect from="/" to="/navigation" />
+          <Redirect from="/" to="/navigation" exact />
+          <Route path="/" render={() => <div>Not found</div>} />
         </Switch>
       </BrowserRouter>
     )
