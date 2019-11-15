@@ -7,22 +7,32 @@ class ToolsGrid extends Component {
     }
 
     render() {
+        const team = this.props.fetchingAdoption ? <div></div> : (
+            <div
+                className="fl w-50 tc f3 measure">
+                Team: {this.props.teamAdoption}%
+            </div>
+        )
+        const people = this.props.fetchingAdoption ? <div></div> : (
+            <div
+                className="fl w-50 tc f3 measure">
+                People: {this.props.adoption}%
+            </div>
+        )
         return (
             <div
-                className="pa2 pv4 ml1 mt1 fl w-25 tc dim"
-                style={{ backgroundColor: this.state.color }}
+                className="fl w-25 tc dim pa1"
             >
-                <h3
-                    className="fl w-100 tc">
-                    {this.props.name}
-                </h3>
                 <div
-                    className="fl w-50 tc">
-                    Team: {this.props.teamAdoption}%
-                </div>
-                <div
-                    className="fl w-50 tc">
-                    People: {this.props.adoption}%
+                    className="fl w-100 pa3"
+                    style={{ backgroundColor: this.state.color }}
+                >
+                    <h1
+                        className="fl w-100 tc f2 measure">
+                        {this.props.name}
+                    </h1>
+                    {team}
+                    {people}
                 </div>
             </div>
         )

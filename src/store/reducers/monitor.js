@@ -22,18 +22,23 @@ const reducer = (state = initialState, action) => {
         }
     }
     if (action.type === actionTypes.TOOLS_HTTP_REQUEST_SUCCEED) {
+        const sortedItems = action.items.sort((a, b) => {
+            return a.name.localeCompare(b.name)
+        })
         return {
             ...state,
             fetching: false,
-            tools: action.items,
+            tools: sortedItems,
             receivedAt: new Date()
         }
     }
-    if (action.type === actionTypes.MONITOR_RECEIVE_ADOPTION) {
-        let index = getIndex(state.tools, action.tool.id)
-        if (index < 0) {
-            return { ...state }
+    if (action.type === actionTypes.ADOPTION_HTTP_REQUEST_DISPATCHED) {
+        return {
+            ...state,
+            fetchingAdoption: true
         }
+    }
+    if (action.type === actionTypes.MONITOR_RECEIVE_ADOPTION) {
         let tools = state.tools.map(item => {
             if (item.id === action.tool.id) {
                 item.adoption = {
@@ -45,18 +50,12 @@ const reducer = (state = initialState, action) => {
         })
         return {
             ...state,
+            fetchingAdoption: false,
             tools: tools
         }
     }
 
     return state
-}
-
-function getIndex(tools, id) {
-    if (!tools) { return -1 }
-    tools.find(item => {
-        return item.id === id
-    })
 }
 
 export default reducer;

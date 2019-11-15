@@ -18,6 +18,7 @@ class Monitor extends Component {
                 <ToolsGrid
                     className="pv4"
                     tools={this.props.tools}
+                    fetchingAdoption={this.props.fetchingAdoption}
                 />
             </div>
         )
@@ -26,7 +27,8 @@ class Monitor extends Component {
 
 const mapStateToProps = state => {
     return {
-        tools: state.monitor.tools
+        tools: state.monitor.tools,
+        fetchingAdoption: state.monitor.fetchingAdoption
     }
 }
 
