@@ -1,0 +1,43 @@
+name: React
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up language environment
+        uses: actions/setup-node@v1
+        with:
+          go-version: 12.x
+        id: nodejs
+
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v1
+
+      - name: Generate build number
+        uses: einaregilsson/build-number@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get dependencies
+        run: npm i
+
+      - name: Build
+        run: npm build
+        env:
+          REACT_APP_API_URL: https://api.staging-dlovtm.walmartdigital.cl/adoption
+          REACT_APP_API_KEY: my-very-secure-api-key
+
+      - name: Get Docker image tag name
+        run: |
+          export
+          mkdir target
+          echo "build-$BUILD_NUMBER" > ./target/TAG_NAME
+
+      - name: Build & Push to Docker Hub
+        uses: opspresso/action-docker@master
+        env:
+          USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          IMAGE_NAME: seadiaz/adoption-ui
+          LATEST: "true"
