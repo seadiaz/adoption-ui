@@ -1,3 +1,9 @@
+# Adoption UI
+
+This is the UI for the tool Adoption.
+
+This tools is prepared for running not on root path, but behind /adoption
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
