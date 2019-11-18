@@ -46,7 +46,6 @@ function fetchAdoption(tool) {
         dispatch({
             type: ADOPTION_HTTP_REQUEST_DISPATCHED
         })
-<<<<<<< HEAD
         return fetch(`${API_URL}/tools/${tool.id}/adoption`, {
             headers: {
                 'Authentication': API_KEY
@@ -54,13 +53,6 @@ function fetchAdoption(tool) {
         })
             .then(response => response.json())
             .then(json => dispatch(receiveAdoption(tool, json)))
-=======
-        return setTimeout(() => {
-            fetch(`http://localhost:3000/tools/${tool.id}/adoption`)
-                .then(response => response.json())
-                .then(json => dispatch(receiveAdoption(tool, json)))
-        }, 1000 * Math.random() * 10)
->>>>>>> c056003fcb4b9e2d3d33214511bae4c9ef79c921
     }
 }
 
