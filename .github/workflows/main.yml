@@ -23,7 +23,7 @@ jobs:
         run: npm i
 
       - name: Build
-        run: npm build
+        run: npm run build
         env:
           REACT_APP_API_URL: https://api.staging-dlovtm.walmartdigital.cl/adoption
           REACT_APP_API_KEY: my-very-secure-api-key
