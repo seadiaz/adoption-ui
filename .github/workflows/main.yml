@@ -27,6 +27,7 @@ jobs:
         env:
           REACT_APP_API_URL: https://api.staging-dlovtm.walmartdigital.cl/adoption
           REACT_APP_API_KEY: my-very-secure-api-key
+          PUBLIC_URL: /adoption
 
       - name: Get Docker image tag name
         run: |
