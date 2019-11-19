@@ -1,7 +1,11 @@
 FROM node:12-alpine
 
-ADD /src /node_modules /package.json /app/
-
 WORKDIR /app
+
+ADD /src /src
+ADD /node_modules /node_modules
+ADD /package.json /
+ADD /public /public
+
 
 CMD [ "yarn", "start", "--prod" ]
