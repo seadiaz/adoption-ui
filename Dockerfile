@@ -1,5 +1,7 @@
-FROM nginx
+FROM node:12-alpine
 
-COPY /nginx.conf /etc/nginx/conf.d/default.conf
+ADD /src /node_modules /package.json /app/
 
-ADD /build /usr/share/nginx/html
+WORKDIR /app
+
+CMD [ "yarn", "start", "--prod" ]
