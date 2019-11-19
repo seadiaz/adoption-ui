@@ -1,4 +1,4 @@
-import { API_URL, API_KEY } from './global'
+import Global from './global'
 
 export const TOOLS_REQUESTED = 'TOOLS_REQUESTED'
 export const requestTools = () => {
@@ -16,9 +16,9 @@ export const dispatchHttpRequest = () => {
         dispatch({
             type: TOOLS_HTTP_REQUEST_DISPATCHED
         })
-        return fetch(`${API_URL}/tools`, {
+        return fetch(`${Global.apiUrl}/tools`, {
             headers: {
-                'Authentication': API_KEY
+                'Authentication': Global.apiKey
             }
         })
             .then(response => response.json())
@@ -46,9 +46,9 @@ function fetchAdoption(tool) {
         dispatch({
             type: ADOPTION_HTTP_REQUEST_DISPATCHED
         })
-        return fetch(`${API_URL}/tools/${tool.id}/adoption`, {
+        return fetch(`${Global.apiUrl}/tools/${tool.id}/adoption`, {
             headers: {
-                'Authentication': API_KEY
+                'Authentication': Global.apiKey
             }
         })
             .then(response => response.json())

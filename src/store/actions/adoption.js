@@ -1,11 +1,11 @@
-import { API_URL, API_KEY } from './global'
+import Global from './global'
 
 export const fetchAdoption = (item) => {
     return (dispatch) => {
         dispatch(requestAdoption(item))
-        return fetch(`${API_URL}/tools/${item.id}/adoption`, {
+        return fetch(`${Global.apiUrl}/tools/${item.id}/adoption`, {
             headers: {
-                'Authentication': API_KEY
+                'Authentication': Global.apiKey
             }
         })
             .then(response => response.json())
