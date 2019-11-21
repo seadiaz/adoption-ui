@@ -1,4 +1,4 @@
-import Global from './global'
+import { API_URL, API_KEY } from './global'
 import { fetchAdoption } from './adoption'
 
 export const SELECT_TOOL = 'SELECT_TOOL'
@@ -32,9 +32,9 @@ function receiveTools(json) {
 export const fetchTools = () => {
     return (dispatch) => {
         dispatch(requestTools())
-        return fetch(`${Global.apiUrl}/tools`, {
+        return fetch(`${API_URL}/tools`, {
             headers: {
-                'Authentication': Global.apiKey
+                'Authentication': API_KEY
             }
         })
             .then(response => response.json())
