@@ -4,7 +4,7 @@ export const fetchAdoption = (item) => {
         dispatch(requestAdoption(item))
         return fetch(`${url}/tools/${item.id}/adoption`, {
             headers: {
-                'Authentication': key
+                'Authorization': key
             }
         })
             .then(response => response.json())

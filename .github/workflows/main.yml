@@ -24,6 +24,7 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
           PUBLIC_URL: /adoption
 
       - name: Get Docker image tag name

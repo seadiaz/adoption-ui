@@ -17,7 +17,7 @@ export const dispatchHttpRequest = () => {
         })
         return fetch(`${url}/tools`, {
             headers: {
-                'Authentication': key
+                'Authorization': key
             }
         })
             .then(response => response.json())
@@ -48,7 +48,7 @@ function fetchAdoption(tool) {
         })
         return fetch(`${url}/tools/${tool.id}/adoption`, {
             headers: {
-                'Authentication': key
+                'Authorization': key
             }
         })
             .then(response => response.json())

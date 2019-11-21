@@ -34,7 +34,7 @@ export const fetchTools = () => {
         dispatch(requestTools())
         return fetch(`${url}/tools`, {
             headers: {
-                'Authentication': key
+                'Authorization': key
             }
         })
             .then(response => response.json())
