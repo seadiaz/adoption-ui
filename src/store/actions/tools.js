@@ -1,4 +1,3 @@
-import { API_URL, API_KEY } from './global'
 import { fetchAdoption } from './adoption'
 
 export const SELECT_TOOL = 'SELECT_TOOL'
@@ -30,11 +29,12 @@ function receiveTools(json) {
 }
 
 export const fetchTools = () => {
-    return (dispatch) => {
+    return (dispatch, getState) => {
+        const { config: { apiUrl: url, apiKey: key } } = getState()
         dispatch(requestTools())
-        return fetch(`${API_URL}/tools`, {
+        return fetch(`${url}/tools`, {
             headers: {
-                'Authentication': API_KEY
+                'Authentication': key
             }
         })
             .then(response => response.json())
