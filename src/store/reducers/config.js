@@ -1,8 +1,8 @@
 import * as actionTypes from '../actions/config'
 
 const initialState = {
-    apiUrl: 'http://localhost:3000',
-    apiKey: null
+    apiUrl: window.localStorage.getItem('apiUrl') || 'http://localhost:3000',
+    apiKey: window.localStorage.getItem('apiKey') || ''
 }
 
 const reducer = (state = initialState, action) => {
