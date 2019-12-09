@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react"
-import Tools from "../../components/Tools/Tools"
+import Adoptables from "../../components/Adoptables/Adoptables"
 import { connect } from 'react-redux'
-import { fetchTools, selectTool } from '../../store/actions/tools'
+import { fetchAdoptables, selectAdoptable } from '../../store/actions/adoptables'
 import Adoption from "../../components/Adoption/Adoption"
+import Menu from "../../components/Menu/Menu"
 
 class Navigation extends Component {
     state = {
@@ -10,13 +11,13 @@ class Navigation extends Component {
     }
 
     componentDidMount() {
-        this.props.fetchTools()
+        this.props.fetchAdoptables()
     }
 
     render() {
-        const adoption = !this.props.selectedTool ? null :
+        const adoption = !this.props.selectedAdoptable ? null :
             <Adoption
-                toolName={this.props.selectedTool.name}
+                adoptableName={this.props.selectedAdoptable.name}
                 adoption={this.props.adoption.adoption}
                 adopters={this.props.adoption.adopters}
                 absentees={this.props.adoption.absentees}
@@ -26,12 +27,13 @@ class Navigation extends Component {
 
         return (
             <Fragment>
+                <Menu />
                 <div className="fl w-100 w-20-ns bg-dark-gray h-100 overflow-y-auto">
-                    <Tools
+                    <Adoptables
                         className="pv4"
-                        onSelectTool={this.props.onSelectTool}
-                        tools={this.props.tools}
-                        selectedTool={this.props.selectedTool}
+                        onSelectAdoptable={this.props.onSelectAdoptable}
+                        adoptables={this.props.adoptables}
+                        selectedAdoptable={this.props.selectedAdoptable}
                     />
                 </div>
                 <div className="fl w-100 w-80-ns bg-light-blue h-100 overflow-y-auto">
@@ -45,15 +47,15 @@ class Navigation extends Component {
 const mapStateToProps = state => {
     return {
         adoption: state.adoption,
-        selectedTool: state.tools.selectedTool,
-        tools: state.tools.items
+        selectedAdoptable: state.adoptables.selectedAdoptable,
+        adoptables: state.adoptables.items
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onSelectTool: (item) => dispatch(selectTool(item)),
-        fetchTools: () => dispatch(fetchTools())
+        onSelectAdoptable: (item) => dispatch(selectAdoptable(item)),
+        fetchAdoptables: () => dispatch(fetchAdoptables())
     }
 }
 

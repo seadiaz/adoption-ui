@@ -1,7 +1,8 @@
-import React, { Component } from "react"
-import ToolsGrid from "../../components/ToolsGrid/ToolsGrid"
+import React, { Component, Fragment } from "react"
+import AdoptablesGrid from "../../components/AdoptablesGrid/AdoptablesGrid"
 import { connect } from 'react-redux'
-import { requestTools } from '../../store/actions/monitor'
+import { requestAdoptables } from '../../store/actions/monitor'
+import Menu from "../../components/Menu/Menu"
 
 class Monitor extends Component {
     state = {
@@ -9,32 +10,35 @@ class Monitor extends Component {
     }
 
     componentDidMount() {
-        this.props.requestTools()
+        this.props.requestAdoptables()
     }
 
     render() {
         return (
-            <div className="fl w-100 bg-dark-gray h-100 overflow-y-auto">
-                <ToolsGrid
-                    className="pv4"
-                    tools={this.props.tools}
-                    fetchingAdoption={this.props.fetchingAdoption}
-                />
-            </div>
+            <Fragment>
+                <Menu />
+                <div className="fl w-100 bg-dark-gray h-100 overflow-y-auto">
+                    <AdoptablesGrid
+                        className="pv4"
+                        adoptables={this.props.adoptables}
+                        fetchingAdoption={this.props.fetchingAdoption}
+                    />
+                </div>
+            </Fragment>
         )
     }
 }
 
 const mapStateToProps = state => {
     return {
-        tools: state.monitor.tools,
+        adoptables: state.monitor.adoptables,
         fetchingAdoption: state.monitor.fetchingAdoption
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        requestTools: () => dispatch(requestTools())
+        requestAdoptables: () => dispatch(requestAdoptables())
     }
 }
 

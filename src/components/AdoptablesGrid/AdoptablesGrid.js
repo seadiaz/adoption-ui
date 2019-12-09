@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import randomColor from 'randomcolor'
-import GridItem from './ToolsGridItem/ToolsGridItem'
+import GridItem from './AdoptablesGridItem/AdoptablesGridItem'
 
-class ToolsGrid extends Component {
+class AdoptablesGrid extends Component {
     state = {
         color: randomColor({ hue: 'green', luminosity: 'light' })
     }
 
     render() {
-        return !this.props.tools ? <div></div> : this.props.tools.map(item => {
+        return !this.props.adoptables ? <div></div> : this.props.adoptables.map(item => {
             return (
 
                 <GridItem
@@ -23,4 +23,4 @@ class ToolsGrid extends Component {
     }
 }
 
-export default ToolsGrid
+export default AdoptablesGrid

@@ -1,21 +1,21 @@
-export const TOOLS_REQUESTED = 'TOOLS_REQUESTED'
-export const requestTools = () => {
+export const ADOPTABLES_REQUESTED = 'ADOPTABLES_REQUESTED'
+export const requestAdoptables = () => {
     return (dispatch) => {
         dispatch({
-            type: TOOLS_REQUESTED
+            type: ADOPTABLES_REQUESTED
         })
         return dispatch(dispatchHttpRequest())
     }
 }
 
-export const TOOLS_HTTP_REQUEST_DISPATCHED = 'TOOLS_HTTP_REQUEST_DISPATCHED'
+export const ADOPTABLES_HTTP_REQUEST_DISPATCHED = 'ADOPTABLES_HTTP_REQUEST_DISPATCHED'
 export const dispatchHttpRequest = () => {
     return (dispatch, getState) => {
         const { config: { apiUrl: url, apiKey: key } } = getState()
         dispatch({
-            type: TOOLS_HTTP_REQUEST_DISPATCHED
+            type: ADOPTABLES_HTTP_REQUEST_DISPATCHED
         })
-        return fetch(`${url}/tools`, {
+        return fetch(`${url}/adoptables`, {
             headers: {
                 'Authorization': key
             }
@@ -25,11 +25,11 @@ export const dispatchHttpRequest = () => {
     }
 }
 
-export const TOOLS_HTTP_REQUEST_SUCCEED = 'TOOLS_HTTP_REQUEST_SUCCEED'
+export const ADOPTABLES_HTTP_REQUEST_SUCCEED = 'ADOPTABLES_HTTP_REQUEST_SUCCEED'
 function receiveHttpRequest(json) {
     return (dispatch) => {
         dispatch({
-            type: TOOLS_HTTP_REQUEST_SUCCEED,
+            type: ADOPTABLES_HTTP_REQUEST_SUCCEED,
             items: json,
             receivedAt: Date.now()
         })
@@ -40,27 +40,27 @@ function receiveHttpRequest(json) {
 }
 
 export const ADOPTION_HTTP_REQUEST_DISPATCHED = 'ADOPTION_HTTP_REQUEST_DISPATCHED'
-function fetchAdoption(tool) {
+function fetchAdoption(adoptable) {
     return (dispatch, getState) => {
         const { config: { apiUrl: url, apiKey: key } } = getState()
         dispatch({
             type: ADOPTION_HTTP_REQUEST_DISPATCHED
         })
-        return fetch(`${url}/tools/${tool.id}/adoption`, {
+        return fetch(`${url}/adoptables/${adoptable.id}/adoption`, {
             headers: {
                 'Authorization': key
             }
         })
             .then(response => response.json())
-            .then(json => dispatch(receiveAdoption(tool, json)))
+            .then(json => dispatch(receiveAdoption(adoptable, json)))
     }
 }
 
 export const MONITOR_RECEIVE_ADOPTION = 'MONITOR_RECEIVE_ADOPTION'
-function receiveAdoption(tool, adoption) {
+function receiveAdoption(adoptable, adoption) {
     return {
         type: MONITOR_RECEIVE_ADOPTION,
-        tool: tool,
+        adoptable: adoptable,
         adoption: adoption,
     }
 }

@@ -1,19 +1,19 @@
-import * as actionTypes from '../actions/tools'
+import * as actionTypes from '../actions/adoptables'
 
 const initialState = {
-    selectedTool: null,
+    selectedAdoptable: null,
     items: [],
     receivedAt: null
 }
 
 const reducer = (state = initialState, action) => {
-    if (action.type === actionTypes.SELECT_TOOL) {
+    if (action.type === actionTypes.SELECT_ADOPTABLE) {
         return {
             ...state,
-            selectedTool: action.value
+            selectedAdoptable: action.value
         }
     }
-    if (action.type === actionTypes.RECEIVE_TOOLS) {
+    if (action.type === actionTypes.RECEIVE_ADOPTABLES) {
         return {
             ...state,
             items: action.items,

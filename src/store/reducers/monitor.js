@@ -2,32 +2,32 @@ import * as actionTypes from '../actions/monitor'
 
 const initialState = {
     fetching: false,
-    tools: [],
+    adoptables: [],
     receivedAt: null
 }
 
 const reducer = (state = initialState, action) => {
-    if (action.type === actionTypes.TOOLS_REQUESTED) {
+    if (action.type === actionTypes.ADOPTABLES_REQUESTED) {
         return {
             ...state,
             fetching: false,
             receivedAt: null
         }
     }
-    if (action.type === actionTypes.TOOLS_HTTP_REQUEST_DISPATCHED) {
+    if (action.type === actionTypes.ADOPTABLES_HTTP_REQUEST_DISPATCHED) {
         return {
             ...state,
             fetching: true,
         }
     }
-    if (action.type === actionTypes.TOOLS_HTTP_REQUEST_SUCCEED) {
+    if (action.type === actionTypes.ADOPTABLES_HTTP_REQUEST_SUCCEED) {
         const sortedItems = action.items.sort((a, b) => {
             return a.name.localeCompare(b.name)
         })
         return {
             ...state,
             fetching: false,
-            tools: sortedItems,
+            adoptables: sortedItems,
             receivedAt: new Date()
         }
     }
@@ -38,8 +38,8 @@ const reducer = (state = initialState, action) => {
         }
     }
     if (action.type === actionTypes.MONITOR_RECEIVE_ADOPTION) {
-        let tools = state.tools.map(item => {
-            if (item.id === action.tool.id) {
+        let adoptables = state.adoptables.map(item => {
+            if (item.id === action.adoptable.id) {
                 item.adoption = {
                     adoption: action.adoption.adoption,
                     teamAdoption: action.adoption.team_adoption
@@ -50,7 +50,7 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             fetchingAdoption: false,
-            tools: tools
+            adoptables: adoptables
         }
     }
 

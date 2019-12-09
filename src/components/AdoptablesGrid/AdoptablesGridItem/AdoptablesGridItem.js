@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import randomColor from 'randomcolor'
 
-class ToolsGrid extends Component {
+class AdoptablesGrid extends Component {
     state = {
         color: randomColor({ luminosity: 'light' })
     }
@@ -39,4 +39,4 @@ class ToolsGrid extends Component {
     }
 }
 
-export default ToolsGrid
+export default AdoptablesGrid

@@ -6,7 +6,7 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux'
 import adoptionReducer from './store/reducers/adoption'
-import toolsReducer from './store/reducers/tools'
+import adoptablesReducer from './store/reducers/adoptables'
 import monitorReducer from './store/reducers/monitor'
 import configReducer from './store/reducers/config'
 import { Provider } from 'react-redux'
@@ -16,7 +16,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const reducer = combineReducers({
     adoption: adoptionReducer,
-    tools: toolsReducer,
+    adoptables: adoptablesReducer,
     monitor: monitorReducer,
     config: configReducer
 })

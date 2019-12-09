@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ChevronRight } from 'react-feather'
 import randomColor from 'randomcolor'
 
-class Tool extends Component {
+class Adoptable extends Component {
     state = {
         color: randomColor({ hue: 'green', luminosity: 'light' })
     }
@@ -24,4 +24,4 @@ class Tool extends Component {
     }
 }
 
-export default Tool
+export default Adoptable

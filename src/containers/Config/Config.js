@@ -1,6 +1,7 @@
-import React, { Component, createRef } from "react"
+import React, { Component, Fragment, createRef } from "react"
 import { connect } from 'react-redux'
 import { updateConfig } from '../../store/actions/config'
+import Menu from "../../components/Menu/Menu"
 
 class Monitor extends Component {
     constructor() {
@@ -41,45 +42,48 @@ class Monitor extends Component {
 
     render() {
         return (
-            <div className="fl w-100 bg-light-green h-100 overflow-y-auto pa4">
+            <Fragment>
+                <Menu />
+                <div className="fl w-100 bg-light-green h-100 overflow-y-auto pa4">
 
-                <div className="fl w-100">
-                    <h1>Configiuration</h1>
+                    <div className="fl w-100">
+                        <h1>Configiuration</h1>
+                    </div>
+                    <div className="w-40">
+                        <label htmlFor="apiUrl" className="f6 b db mb2 mt4">API URL</label>
+                        <input
+                            id="apiUrl"
+                            className="input-reset ba b--black-20 pa2 mb db w-100"
+                            type="text"
+                            ref={this.apiUrlFieldRef}
+                            defaultValue={this.props.apiUrl} />
+                    </div>
+                    <div className="w-40">
+                        <label htmlFor="apiKey" className="f6 b db mb2 mt4">API Key <span className="normal black-60">(optional)</span></label>
+                        <input
+                            id="apiKey"
+                            className="input-reset ba b--black-20 pa2 mb db w-100"
+                            type="text"
+                            ref={this.apiKeyFieldRef}
+                            defaultValue={this.props.apiKey} />
+                    </div>
+                    <div className="w-40">
+                        <label htmlFor="labels" className="f6 b db mb2 mt4">Labels <span className="normal black-60">(optional)</span></label>
+                        <input
+                            id="labels"
+                            className="input-reset ba b--black-20 pa2 mb db w-100"
+                            type="text"
+                            ref={this.labelsFieldRef}
+                            defaultValue={this.getStringFromLabels(this.props.labels)} />
+                        <small id="name-desc" className="f6 black-60 db mb2">Key1=Value1, Key 2=Value 2,...</small>
+                    </div>
+                    <div className="w-40">
+                        <button
+                            className="f6 br3 ph3 pv2 mb2 dib white bg-purple pointer fr mt3"
+                            onClick={this.onChangeHandler}>Save</button>
+                    </div>
                 </div>
-                <div className="w-40">
-                    <label htmlFor="apiUrl" className="f6 b db mb2 mt4">API URL</label>
-                    <input
-                        id="apiUrl"
-                        className="input-reset ba b--black-20 pa2 mb db w-100"
-                        type="text"
-                        ref={this.apiUrlFieldRef}
-                        defaultValue={this.props.apiUrl} />
-                </div>
-                <div className="w-40">
-                    <label htmlFor="apiKey" className="f6 b db mb2 mt4">API Key <span className="normal black-60">(optional)</span></label>
-                    <input
-                        id="apiKey"
-                        className="input-reset ba b--black-20 pa2 mb db w-100"
-                        type="text"
-                        ref={this.apiKeyFieldRef}
-                        defaultValue={this.props.apiKey} />
-                </div>
-                <div className="w-40">
-                    <label htmlFor="labels" className="f6 b db mb2 mt4">Labels <span className="normal black-60">(optional)</span></label>
-                    <input
-                        id="labels"
-                        className="input-reset ba b--black-20 pa2 mb db w-100"
-                        type="text"
-                        ref={this.labelsFieldRef}
-                        defaultValue={this.getStringFromLabels(this.props.labels)} />
-                    <small id="name-desc" className="f6 black-60 db mb2">Key1=Value1, Key 2=Value 2,...</small>
-                </div>
-                <div className="w-40">
-                    <button
-                        className="f6 br3 ph3 pv2 mb2 dib white bg-purple pointer fr mt3"
-                        onClick={this.onChangeHandler}>Save</button>
-                </div>
-            </div>
+            </Fragment>
         )
     }
 }

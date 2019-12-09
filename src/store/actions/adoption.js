@@ -2,7 +2,7 @@ export const fetchAdoption = (item) => {
     return (dispatch, getState) => {
         const { config: { apiUrl: url, apiKey: key } } = getState()
         dispatch(requestAdoption(item))
-        return fetch(`${url}/tools/${item.id}/adoption`, {
+        return fetch(`${url}/adoptables/${item.id}/adoption`, {
             headers: {
                 'Authorization': key
             }
