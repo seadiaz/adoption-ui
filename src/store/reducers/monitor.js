@@ -7,7 +7,6 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    console.log('action:', action.type)
     if (action.type === actionTypes.TOOLS_REQUESTED) {
         return {
             ...state,
