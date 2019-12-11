@@ -21,14 +21,11 @@ class AdoptablesGrid extends Component {
         )
         return (
             <div
-                className="fl w-25 tc dim pa1"
-            >
+                className="fl w-25 tc dim pa1">
                 <div
                     className="fl w-100 pa3"
-                    style={{ backgroundColor: this.state.color }}
-                >
-                    <h1
-                        className="fl w-100 tc f2 measure">
+                    style={{ backgroundColor: this.state.color }}>
+                    <h1 className="fl w-100 tc f2 measure">
                         {this.props.name}
                     </h1>
                     {team}

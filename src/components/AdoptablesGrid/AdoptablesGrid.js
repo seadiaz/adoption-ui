@@ -10,7 +10,6 @@ class AdoptablesGrid extends Component {
     render() {
         return !this.props.adoptables ? <div></div> : this.props.adoptables.map(item => {
             return (
-
                 <GridItem
                     key={item.name}
                     name={item.name}

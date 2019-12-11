@@ -3,11 +3,11 @@ import * as adoptionType from '../actions/adoption'
 const initialState = {
     fetching: false,
     adoption: null,
-    adopters: null,
-    absentees: null,
+    adopters: [],
+    absentees: [],
     teamAdoption: null,
-    teamAdopters: null,
-    teamAbsentees: null
+    teamAdopters: [],
+    teamAbsentees: []
 }
 
 const reducer = (state = initialState, action) => {

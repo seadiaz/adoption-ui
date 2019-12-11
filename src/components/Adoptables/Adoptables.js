@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import Adoptable from "./Adoptable/Adoptable"
 
-class Adoptables extends Component {
-    shouldComponentUpdate(nextProps) {
-        // return !this.props.adoptables || this.props.adoptables.length !== nextProps.adoptables.length
-        return true
+class Adoptables extends PureComponent {
+    state = {
+        adoptables: []
     }
 
     handleSelectAdoptable = (item) => {
@@ -13,8 +12,15 @@ class Adoptables extends Component {
         }
     }
 
+    componentDidUpdate() {
+        const adoptables = this.props.adoptables.sort((a, b) => a.name.localeCompare(b.name))
+        this.setState({
+            adoptables: adoptables
+        })
+    }
+
     render() {
-        return !this.props.adoptables ? <div></div> : this.props.adoptables.map(item => {
+        return this.state.adoptables.length === 0 ? <div></div> : this.state.adoptables.map(item => {
             return (
                 <Adoptable
                     name={item.name}

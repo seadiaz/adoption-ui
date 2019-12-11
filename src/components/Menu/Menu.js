@@ -6,16 +6,7 @@ const iconSize = 24
 const className = "f6 link dim br3 ph3 pv2 mb2 dib purple"
 const activeClassName = "dark-red"
 
-
 class Menu extends Component {
-    state = {
-
-    }
-
-    componentDidMount() {
-        console.log(this.props)
-    }
-
     render() {
         const monitorMenuItem = this.props.match.path === "/monitor" ? null : (
             <NavLink
@@ -33,15 +24,18 @@ class Menu extends Component {
                 <Columns size={iconSize} />
             </NavLink>
         )
+        const configurationMenuItem = this.props.match.path === "/config" ? null : (
+            <NavLink
+                className={className}
+                activeClassName={activeClassName}
+                to="/config">
+                <Settings size={iconSize} />
+            </NavLink>
+        )
         return (
             <div className="right-0 top-1 fixed z-5">
                 <div className="flex flex-column">
-                    <NavLink
-                        className={className}
-                        activeClassName={activeClassName}
-                        to="/config">
-                        <Settings size={iconSize} />
-                    </NavLink>
+                    {configurationMenuItem}
                     {monitorMenuItem}
                     {navigationMenuItem}
                 </div>

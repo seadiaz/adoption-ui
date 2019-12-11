@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import Teams from '../Teams/Teams'
-import People from '../People/People'
 import Switch from "react-switch"
+import PeopleGrid from '../PeopleGrid/PeopleGrid'
+import TeamsGrid from '../TeamsGrid/TeamsGrid'
 
 class Adoption extends Component {
     state = {
@@ -18,38 +18,68 @@ class Adoption extends Component {
         return (
             !this.state.visualizationListTypeIsTeam ? null :
                 <Fragment>
-                    <div className="fl w-100 w-50-ns">
-                        <Teams
-                            title="Adopters"
-                            list={this.props.teamAdopters}
-                        />
-                    </div>
-                    <div className="fl w-100 w-50-ns">
-                        <Teams
-                            title="Absentees"
-                            list={this.props.teamAbsentees}
-                        />
-                    </div>
+                    <TeamsGrid
+                        items={this.getTeamAdoptionList()} />
                 </Fragment>
         )
+    }
+
+    getTeamAdoptionList = () => {
+        const adopters = this.props.teamAdopters.sort(this.compareTeams).map((item) => {
+            return {
+                adopted: true,
+                name: item.name,
+                level: item.level
+            }
+        })
+        const absentees = this.props.teamAbsentees.sort(this.compareTeams).map((item) => {
+            return {
+                adopted: false,
+                name: item.name,
+                level: item.level
+            }
+        })
+
+        return [...adopters, ...absentees]
+    }
+
+    compareTeams = (a, b) => {
+        if (a.level === b.level) {
+            return a.name.localeCompare(b.name)
+        }
+
+        return b.level - a.level
     }
 
     getPeopleVisualization = () => {
         return (
             this.state.visualizationListTypeIsTeam ? null :
                 <Fragment>
-                    <div className="fl w-100 w-50-ns">
-                        <People
-                            list={this.props.adopters}
-                        />
-                    </div>
-                    <div className="fl w-100 w-50-ns">
-                        <People
-                            list={this.props.absentees}
-                        />
-                    </div>
+                    <PeopleGrid
+                        items={this.getPeopleAdoptionList()} />
                 </Fragment>
         )
+    }
+
+    getPeopleAdoptionList = () => {
+        const adopters = this.props.adopters.sort((a, b) => a.name.localeCompare(b.name)).map((item) => {
+            return {
+                adopted: true,
+                level: 100,
+                name: item.name,
+                email: item.email
+            }
+        })
+        const absentees = this.props.absentees.sort((a, b) => a.name.localeCompare(b.name)).map((item) => {
+            return {
+                adopted: false,
+                level: 0,
+                name: item.name,
+                email: item.email
+            }
+        })
+
+        return [...adopters, ...absentees]
     }
 
     render() {
@@ -58,7 +88,7 @@ class Adoption extends Component {
 
         return (
             <Fragment>
-                <div className="f-subheadline lh-title tc">Adoption level: <b>{this.props.adoption}%</b></div>
+                <div className="f-subheadline lh-title tc mt4">Adoption level: <b>{this.props.adoption}%</b></div>
                 <div className="fl w-100 ph4 mt4">
                     <div className="dib v-mid">Teams</div>
                     <Switch

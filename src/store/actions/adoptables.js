@@ -29,9 +29,12 @@ function receiveAdoptables(json) {
 
 export const fetchAdoptables = () => {
     return (dispatch, getState) => {
-        const { config: { apiUrl: url, apiKey: key } } = getState()
+        const { config: { apiUrl: url, apiKey: key, labels } } = getState()
         dispatch(requestAdoptables())
-        return fetch(`${url}/adoptables`, {
+        const labelsFilter = labels.map((item) => {
+            return `labels=${item.kind}:${item.value}`
+        })
+        return fetch(`${url}/adoptables?${labelsFilter.join('&')}`, {
             headers: {
                 'Authorization': key
             }
