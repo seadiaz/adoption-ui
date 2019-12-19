@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import randomColor from 'randomcolor'
+import { getRGBArrayFromPercentage } from '../../helpers/color'
 
 class GridItem extends PureComponent {
     state = {
@@ -9,6 +10,9 @@ class GridItem extends PureComponent {
     }
 
     getColor = () => {
+        const rgb = getRGBArrayFromPercentage(this.props.level)
+        console.log(`color: ${rgb.join(', ')}`)
+
         if (this.props.level === 0) {
             return this.state.lowLevelColor
         }
