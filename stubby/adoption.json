@@ -1,0 +1,881 @@
+{
+  "adoption": 0,
+  "level": 0,
+  "adopters": [
+    {
+      "id": "ddaa2fa9-c9d9-4f85-9e86-39126ca4baee",
+      "email": "ricardo.gaete@walmart.com",
+      "name": "Ricardo Gaete",
+      "adoptables": []
+    }
+  ],
+  "absentees": [
+    {
+      "id": "9b9c36bf-5909-4e6b-b2cb-89bd353b8414",
+      "email": "Alvaro.Riadi@walmart.com",
+      "name": "Alvaro Riadi",
+      "adoptables": []
+    },
+    {
+      "id": "3c0c9627-f5e0-42c2-a35d-c1bfed49284d",
+      "email": "neil.turner@walmart.com",
+      "name": "Neil Turner",
+      "adoptables": []
+    },
+    {
+      "id": "93a17093-77d2-4054-a9bb-07d37f38aa83",
+      "email": "chin.dou@walmart.com",
+      "name": "Chin Dou",
+      "adoptables": []
+    },
+    {
+      "id": "28ef116b-c8f0-4692-8fd7-f2b5602f5ec9",
+      "email": "albert.duran@walmart.com",
+      "name": "Albert Duran",
+      "adoptables": []
+    },
+    {
+      "id": "442289e7-569b-4767-a721-248abe1f5e4c",
+      "email": "diego.rebolledo@walmart.com",
+      "name": "Diego Rebolledo",
+      "adoptables": []
+    },
+    {
+      "id": "212dc4c2-4c27-4cf6-a9e3-c34bce056505",
+      "email": "jesus.pinedo@walmart.com",
+      "name": "Jesus Pinedo",
+      "adoptables": []
+    },
+    {
+      "id": "3f87cdf5-5f91-4898-8fe8-d9d64da48da0",
+      "email": "esteban.bascur@walmart.com",
+      "name": "Esteban Bascur",
+      "adoptables": []
+    },
+    {
+      "id": "3a96426a-d1b8-4973-9258-fc56c2d79dc2",
+      "email": "Pablo.Zenteno@walmart.com",
+      "name": "Pablo Zenteno",
+      "adoptables": []
+    },
+    {
+      "id": "13781e1d-15ed-449a-9a65-6b78f79fd1ae",
+      "email": "Carlos.Alvarez0@walmart.com",
+      "name": "Carlos Alvarez",
+      "adoptables": []
+    },
+    {
+      "id": "c10c76f0-bd6b-459b-838e-e94648b5d3e8",
+      "email": "rodrigo.cuevas@walmart.com",
+      "name": "Rodrigo Cuevas",
+      "adoptables": []
+    },
+    {
+      "id": "d8f275ad-5c6f-467c-ba4b-e73ee91ed347",
+      "email": "barbara.carrasquel@walmart.com",
+      "name": "Barbara Carrasquel",
+      "adoptables": []
+    },
+    {
+      "id": "771f36a0-0fac-407a-bd59-cbe2353850b2",
+      "email": "rodrigo.pezo@walmart.com",
+      "name": "Rodrigo Pezo",
+      "adoptables": []
+    },
+    {
+      "id": "424e2688-364a-4a94-8005-560a19bc3d17",
+      "email": "alvaro.prado@walmart.com",
+      "name": "Alvaro Prado",
+      "adoptables": []
+    },
+    {
+      "id": "8c98feea-5fba-402f-a0a0-ec61b9bf53d7",
+      "email": "Gonzalo.Guajardo@walmart.com",
+      "name": "Gonzalo Guajardo",
+      "adoptables": []
+    },
+    {
+      "id": "0bf2ee18-d074-4dcd-ba8c-e41fa232dcfe",
+      "email": "juan.espinoza1@walmart.com",
+      "name": "Juan Carlos Espinoza",
+      "adoptables": []
+    },
+    {
+      "id": "401a5278-a009-4b75-b28f-cf6812bb5b21",
+      "email": "Daniel.Ordaz0@walmart.com",
+      "name": "Daniel Ordaz",
+      "adoptables": []
+    },
+    {
+      "id": "a172b533-3eb0-49f0-a7e1-32267eac3386",
+      "email": "dariel.rivero@walmart.com",
+      "name": "Dariel Rivero",
+      "adoptables": []
+    },
+    {
+      "id": "165214ba-aade-4497-8d99-a118f5827ba3",
+      "email": "marco.espinoza@walmart.com",
+      "name": "Marco Espinoza",
+      "adoptables": []
+    },
+    {
+      "id": "40c2058c-366c-42df-a7e8-355acb476171",
+      "email": "consuelo.morales@walmart.com",
+      "name": "Consuelo Morales",
+      "adoptables": []
+    },
+    {
+      "id": "04f59055-eda1-48f3-8c07-843829494593",
+      "email": "camila.ovalle@walmart.com",
+      "name": "Camila Ovalle",
+      "adoptables": []
+    },
+    {
+      "id": "82b08a39-06b9-4123-842a-afcba328bf5c",
+      "email": "elias.correa@walmart.com",
+      "name": "Elias Correa",
+      "adoptables": []
+    },
+    {
+      "id": "6bcdfcef-0e41-4478-8844-33af2b3ed9b1",
+      "email": "braulio.castro@walmart.com",
+      "name": "Braulio Castro",
+      "adoptables": []
+    },
+    {
+      "id": "b08d4f2d-dad8-49f9-85a7-743eb34e2569",
+      "email": "mauricio.alvarez1@walmart.com",
+      "name": "Mauricio Alvarez",
+      "adoptables": []
+    },
+    {
+      "id": "a2f98ff4-2bfe-4d59-a1df-d9f7803d1449",
+      "email": "siraj.kurudan@walmart.com",
+      "name": "Siraj Kurudan",
+      "adoptables": []
+    },
+    {
+      "id": "5d8a2046-0cb8-40cd-9405-1380cf3d0a40",
+      "email": "elias.rodriguez@walmart.com",
+      "name": "Elias Rodriguez",
+      "adoptables": []
+    },
+    {
+      "id": "e57f85c6-9c08-41ff-a004-5b46417947ca",
+      "email": "daniel.gomez1@walmart.com",
+      "name": "Daniel Gomez",
+      "adoptables": []
+    },
+    {
+      "id": "830254ee-b9ae-48a7-a52d-19e439736e64",
+      "email": "Gonzalo.Schultz@walmart.com",
+      "name": "Gonzalo Schultz",
+      "adoptables": []
+    },
+    {
+      "id": "1e4f4c69-f60c-46be-a5b0-c5d6146ff5d5",
+      "email": "kaviarasan.kaliappan@walmart.com",
+      "name": "Kaviarisan Kaliappan",
+      "adoptables": []
+    },
+    {
+      "id": "a80256ae-6b57-426f-acbb-3f3fc6030024",
+      "email": "iliana.marcano@walmart.com",
+      "name": "Iliana Marcano",
+      "adoptables": []
+    },
+    {
+      "id": "bacafcc9-a13e-44dc-b0dd-25b9648502c4",
+      "email": "victor.souza@walmart.com",
+      "name": "Victor Souza",
+      "adoptables": []
+    },
+    {
+      "id": "faa7a479-a4b4-46e6-936c-bfadf6019145",
+      "email": "maryelin.quintanilla@walmart.com",
+      "name": "Maryelin Quintanilla",
+      "adoptables": []
+    },
+    {
+      "id": "db73b856-2e4c-4699-bca7-5c2dff500955",
+      "email": "Diego.Padovani@walmart.com",
+      "name": "Diego Padovani",
+      "adoptables": []
+    },
+    {
+      "id": "ff8a0c1c-c9a7-44d0-8250-7ed10b4bd79d",
+      "email": "hector.varas@walmart.com",
+      "name": "Hector Varas",
+      "adoptables": []
+    },
+    {
+      "id": "9736d1c2-6931-4db7-a1ea-f3e63e3fc77f",
+      "email": "juan.gatica@walmart.com",
+      "name": "Juan Pablo Gatica",
+      "adoptables": []
+    },
+    {
+      "id": "a157a380-269e-420c-8929-6978363b20a9",
+      "email": "miguel.herrera0@walmart.com",
+      "name": "Miguel Herrera",
+      "adoptables": []
+    },
+    {
+      "id": "9f9f7831-9331-4630-ad08-bd1c3001f5da",
+      "email": "francisco.albornoz@walmart.com",
+      "name": "Francisco Albornoz",
+      "adoptables": []
+    },
+    {
+      "id": "509a136c-f085-4149-a6b0-63b90aa7147f",
+      "email": "rut.martinez@walmart.com",
+      "name": "Rut Martinez",
+      "adoptables": []
+    },
+    {
+      "id": "ec1a7139-47a0-4590-9734-2ad49a751494",
+      "email": "marianny.veliz@walmart.com",
+      "name": "Marianny Veliz",
+      "adoptables": []
+    },
+    {
+      "id": "c9e9b26b-220e-42d4-9330-77c5e143fd87",
+      "email": "jaime.arcos@walmart.com",
+      "name": "Jaime Arcos",
+      "adoptables": []
+    },
+    {
+      "id": "d767deab-28e8-457e-9c88-7e551ad210ee",
+      "email": "mariajesus.valle@walmart.com",
+      "name": "Maria Jesús Valle",
+      "adoptables": []
+    },
+    {
+      "id": "be155c85-8b11-4fa4-b32a-0b44654c8f31",
+      "email": "richard.miranda@walmart.com",
+      "name": "Richard Miranda",
+      "adoptables": []
+    },
+    {
+      "id": "24b2c8d4-1695-42e2-9358-b636decc4f57",
+      "email": "felipe.machuca@walmart.com",
+      "name": "Felipe Machuca",
+      "adoptables": []
+    },
+    {
+      "id": "42c64063-442b-422b-98b1-57c6d9e490cc",
+      "email": "erick.valenzuela@walmart.com",
+      "name": "Erick Moya",
+      "adoptables": []
+    },
+    {
+      "id": "304195b1-3dc5-44e7-a027-74eaee8f916e",
+      "email": "andrea.fuentes@walmart.com",
+      "name": "Andrea Fuentes",
+      "adoptables": []
+    },
+    {
+      "id": "54f7c1f9-5aeb-45c6-a295-471fbfecc569",
+      "email": "mauricio.arenas@walmart.com",
+      "name": "Mauricio Arenas",
+      "adoptables": []
+    },
+    {
+      "id": "89b471a4-f332-41ad-bcc8-e0db8f60f802",
+      "email": "Juan.Huerta@walmart.com",
+      "name": "Miguel Huerta",
+      "adoptables": []
+    },
+    {
+      "id": "4343d4cb-fb7c-4bf0-aeb7-2a9bd09aac45",
+      "email": "juan.barra@walmart.com",
+      "name": "Juan Barra",
+      "adoptables": []
+    },
+    {
+      "id": "80cc4b0d-f098-4910-ad42-26b0cf642067",
+      "email": "Maria.Martinez1@walmart.com",
+      "name": "Maria Jose Martinez",
+      "adoptables": []
+    },
+    {
+      "id": "505649ae-94ac-44a7-b5a1-045920aa0121",
+      "email": "mauricio.ortega@walmart.com",
+      "name": "Mauricio Ortega",
+      "adoptables": []
+    },
+    {
+      "id": "017a2ec0-0109-4638-859e-5278515d5c22",
+      "email": "Michael.Cram@walmart.com",
+      "name": "Michael Cram",
+      "adoptables": []
+    },
+    {
+      "id": "abdece19-619f-41d8-b2f9-208b9c0ca8f9",
+      "email": "armando.paulo@walmart.com",
+      "name": "Armando Paulo",
+      "adoptables": []
+    },
+    {
+      "id": "4164324d-f57a-46fa-86d6-ff32754612fc",
+      "email": "sulimar.bernal@walmart.com",
+      "name": "Sullimar Bernal",
+      "adoptables": []
+    },
+    {
+      "id": "67765025-c405-4bb4-9069-aea75ace5d50",
+      "email": "jose.alvarado5@walmart.com",
+      "name": "Jose Alvarado",
+      "adoptables": []
+    },
+    {
+      "id": "ecd1809c-0bbe-45dc-a0e8-f8a0879a7480",
+      "email": "Jorge.Palma0@walmart.com",
+      "name": "Jorge Palma",
+      "adoptables": []
+    },
+    {
+      "id": "00ca6653-ed74-4799-b391-a79464f91b1e",
+      "email": "matias.reyes@walmart.com",
+      "name": "Matías Reyes",
+      "adoptables": []
+    },
+    {
+      "id": "b68519a3-78ae-4153-9148-c5394342e836",
+      "email": "bernardo.marin0@walmart.com",
+      "name": "Bernardo Marin",
+      "adoptables": []
+    },
+    {
+      "id": "62b291c2-9fc2-438c-a369-1dc8b99cdfc1",
+      "email": "vikram.chandrakanth@walmart.com",
+      "name": "Vikram Chandrakanth",
+      "adoptables": []
+    },
+    {
+      "id": "7c958212-ba7c-4788-b090-2c08f5201a40",
+      "email": "Katherine.sogamoso@walmart.com",
+      "name": "Katherine Sogamoso",
+      "adoptables": []
+    },
+    {
+      "id": "e80deb6b-dc9a-48bd-b9c2-7ab31f04a819",
+      "email": "diego.flores@walmart.com",
+      "name": "Diego Flores",
+      "adoptables": []
+    },
+    {
+      "id": "33629550-9464-4228-a552-dcd51a856aaf",
+      "email": "maximiliano.guzman@walmart.com",
+      "name": "Maximiliano Guzman",
+      "adoptables": []
+    },
+    {
+      "id": "0bde1ea3-39df-4aab-bef6-1f54658b7743",
+      "email": "reinaldo.martinez@walmart.com",
+      "name": "Reinaldo Martinez",
+      "adoptables": []
+    },
+    {
+      "id": "aaf84043-a4e8-48f8-9c93-586a4f706ca5",
+      "email": "sergio.gonzalez@walmart.com",
+      "name": "Sergio Gonzalez",
+      "adoptables": []
+    },
+    {
+      "id": "80c8222a-5925-46aa-8b17-72f9b0e67d4a",
+      "email": "Rodolfo.quiroz@walmart.com",
+      "name": "Rodolfo Quiroz",
+      "adoptables": []
+    },
+    {
+      "id": "f1f1b8b7-d6ef-41e1-b055-4d5bbbe9b616",
+      "email": "jose.bovet@walmart.com",
+      "name": "Jose Bovet",
+      "adoptables": []
+    },
+    {
+      "id": "58689ddc-3e9d-456a-9ece-957103ae970a",
+      "email": "paulina.rivera0@walmart.com",
+      "name": "Paulina Rivera",
+      "adoptables": []
+    },
+    {
+      "id": "ed887573-a31b-4f34-a99a-6eff7947b662",
+      "email": "Hernan.Henriquez@walmart.com",
+      "name": "Sebastian Figueroa",
+      "adoptables": []
+    },
+    {
+      "id": "6962bfaf-90e6-4008-a29e-f0a2aca52c02",
+      "email": "camilo.cabrera@walmart.com",
+      "name": "Camilo Cabrera",
+      "adoptables": []
+    },
+    {
+      "id": "1004912d-9f92-49e6-90e6-4386444f5815",
+      "email": "antonio.betancourt@walmart.com",
+      "name": "Antonio Betancourt",
+      "adoptables": []
+    },
+    {
+      "id": "b6903d5b-bec8-409c-80ca-d59cbd72c379",
+      "email": "diego.aguirre@walmart.com",
+      "name": "Diego Aguirre",
+      "adoptables": []
+    },
+    {
+      "id": "50b77523-961b-4480-b97d-2652ec4d91cf",
+      "email": "casto.molina@walmart.com",
+      "name": "Casto Colina",
+      "adoptables": []
+    },
+    {
+      "id": "80a77f3e-61ed-4bc2-ba2c-9ff2c4b93b18",
+      "email": "Gerardo.Llanos@walmart.com",
+      "name": "Gerardo Llanos",
+      "adoptables": []
+    },
+    {
+      "id": "b89b94ef-88b0-4008-9891-2f1a68d0e14b",
+      "email": "Mario.Velasco@walmart.com",
+      "name": "Mario Velasco",
+      "adoptables": []
+    },
+    {
+      "id": "8345c4f5-a93f-41d5-9c13-ccbaecde169f",
+      "email": "esteban.contreras@walmart.com",
+      "name": "Esteban Contreras",
+      "adoptables": []
+    },
+    {
+      "id": "439bb270-3891-4cea-85db-fd4b7bc4c425",
+      "email": "macarena.duenas@walmart.com",
+      "name": "Macarena Dueñas",
+      "adoptables": []
+    },
+    {
+      "id": "7328ab48-9dad-4791-bfd1-b3f75eef1c6a",
+      "email": "jimmy.miller@walmart.com",
+      "name": "Jimmy Miller",
+      "adoptables": []
+    },
+    {
+      "id": "4d4c254b-a42b-40cf-a75f-f44b564a33e2",
+      "email": "david.munoz3@walmart.com",
+      "name": "David Muñoz",
+      "adoptables": []
+    },
+    {
+      "id": "66d6969f-501f-4988-b201-e3d0de56fb71",
+      "email": "Christopher.Santelices@walmart.com",
+      "name": "Cristopher Santelices",
+      "adoptables": []
+    },
+    {
+      "id": "4cb97c14-5eba-4c78-9bfc-e33a39e8d425",
+      "email": "jonathan.meneses@walmart.com",
+      "name": "Jonathan Meneses",
+      "adoptables": []
+    },
+    {
+      "id": "1ee15354-46cb-44c4-91ea-0920a5e50b3d",
+      "email": "jorge.navarro@walmart.com",
+      "name": "Jorge Navarro",
+      "adoptables": []
+    },
+    {
+      "id": "e6e0f0c4-86c7-4a1c-874a-3649f3c773fd",
+      "email": "karen.angulo@walmart.com",
+      "name": "Karen Angulo",
+      "adoptables": []
+    },
+    {
+      "id": "48ae9acf-ff76-488f-9d25-88a3c5dd65d5",
+      "email": "susana.rios@walmart.com",
+      "name": "Susana Rios",
+      "adoptables": []
+    },
+    {
+      "id": "0484d0bb-eb05-4f79-8d48-42e4417a2f20",
+      "email": "nicolas.debrito@walmart.com",
+      "name": "Nicolas De Brito",
+      "adoptables": []
+    },
+    {
+      "id": "ca4d1569-c304-45f2-98c6-438e22ffa985",
+      "email": "Jorge.Pabon@walmart.com",
+      "name": "Jorge Pabón",
+      "adoptables": []
+    },
+    {
+      "id": "8da5903a-265f-437d-ab25-db6c9fb61b1d",
+      "email": "dinakaran.radhakrishnan@walmart.com",
+      "name": "Dinakaran Radhakrishnan",
+      "adoptables": []
+    },
+    {
+      "id": "f110028a-47f6-4fe9-bb51-9551a69be14c",
+      "email": "sebastian.diaz@walmart.com",
+      "name": "Sebastian Diaz",
+      "adoptables": []
+    },
+    {
+      "id": "f9312866-3de5-4e83-9f49-4b0955be66c1",
+      "email": "felipe.alfaro@walmart.com",
+      "name": "Felipe Alfaro",
+      "adoptables": []
+    },
+    {
+      "id": "4a28bd49-5646-4c70-b276-29ba288c33fb",
+      "email": "Pablo.abreu@walmart.com",
+      "name": "Pablo Abreu",
+      "adoptables": []
+    },
+    {
+      "id": "9ff52765-1d93-44a4-bf76-7f31b0b118c7",
+      "email": "Pedro.Capriles@walmart.com",
+      "name": "Pedro Capriles",
+      "adoptables": []
+    },
+    {
+      "id": "b1ff0681-372e-4944-86d6-213de8b96b0c",
+      "email": "Julio.Gutierrez0@walmart.com",
+      "name": "Julio Gutierrez",
+      "adoptables": []
+    },
+    {
+      "id": "bf7ddef8-08f0-4a66-a5fb-d2527dd3a80b",
+      "email": "liliana.cordova@walmart.com",
+      "name": "Liliana Cordova",
+      "adoptables": []
+    },
+    {
+      "id": "cbee1eda-1f9e-4bf8-bcb3-3d8a70f89d48",
+      "email": "jean.mubaied@walmart.com",
+      "name": "Jean Mubaied",
+      "adoptables": []
+    },
+    {
+      "id": "f1fa2198-163f-46c9-9190-e145118da6f1",
+      "email": "Sebastian.Jorquera@walmart.com",
+      "name": "Sebastian Jorquera",
+      "adoptables": []
+    },
+    {
+      "id": "b7987acb-c4e4-4728-ad64-374dc0a1dec8",
+      "email": "katha@walmart.com",
+      "name": "Katherine Gatica",
+      "adoptables": []
+    },
+    {
+      "id": "b6b3e042-2ef5-493f-8fe2-e4c2e7726a67",
+      "email": "Ignacio.Oneto@walmart.com",
+      "name": "Ignacio Oneto",
+      "adoptables": []
+    },
+    {
+      "id": "5b03080c-50e0-4154-8f30-9db6257de1de",
+      "email": "juan.montoya0@walmart.com",
+      "name": "Francisco Montoya",
+      "adoptables": []
+    },
+    {
+      "id": "85b656c0-09e0-405b-8a98-85c2abf34e5d",
+      "email": "cristian.tejada@walmart.com",
+      "name": "Cristian Tejada",
+      "adoptables": []
+    },
+    {
+      "id": "39fc63e9-6ac8-4a24-ae9c-4910b8b81b38",
+      "email": "cristobal.roco@walmart.com",
+      "name": "Cristobal Roco",
+      "adoptables": []
+    },
+    {
+      "id": "132a0f24-d72a-441a-b091-b853be619478",
+      "email": "maged.musleh@walmart.com",
+      "name": "Maged Musleh",
+      "adoptables": []
+    },
+    {
+      "id": "632a8d15-c379-49cb-b76e-d8fda5646f0b",
+      "email": "manuel.labarca@walmart.com",
+      "name": "Manuel Labarca",
+      "adoptables": []
+    },
+    {
+      "id": "6993e3e8-77ee-4e08-9a08-fc4d302e4965",
+      "email": "jellan.bozo@walmart.com",
+      "name": "Jellan Bozo",
+      "adoptables": []
+    },
+    {
+      "id": "d72c0603-29d1-4514-ba2b-e2cd9d636d2e",
+      "email": "silvio.flores@walmart.com",
+      "name": "Silvio Flores",
+      "adoptables": []
+    },
+    {
+      "id": "0025f9c2-1b03-49ec-9762-fcefd9a1a12d",
+      "email": "ernesto.fuentes@walmart.com",
+      "name": "Ernesto Fuentes",
+      "adoptables": []
+    },
+    {
+      "id": "a3391d06-612f-40c7-94c3-2d820de514b0",
+      "email": "jonathan.silva2@walmart.com",
+      "name": "Jonathan Silva",
+      "adoptables": []
+    },
+    {
+      "id": "ef64398b-0449-4fab-ba6f-4de67ce5c926",
+      "email": "alberto.ceballos@walmart.com",
+      "name": "Alberto Ceballos",
+      "adoptables": []
+    },
+    {
+      "id": "7a227449-f93f-4eb3-8118-2ef8addef2a8",
+      "email": "Hernan.Monserrat@walmart.com",
+      "name": "Hernan Monserrat",
+      "adoptables": []
+    },
+    {
+      "id": "64d054a1-ba33-4562-a802-3bdcf5b0584a",
+      "email": "Reinaldo.Porto@walmart.com",
+      "name": "Reinaldo Porto",
+      "adoptables": []
+    },
+    {
+      "id": "451c060b-8117-46a7-964c-267c14052ae4",
+      "email": "Armando.Rojas@walmart.com",
+      "name": "Armando Rojas",
+      "adoptables": []
+    },
+    {
+      "id": "5c248441-1054-433e-9b01-537c1c3758af",
+      "email": "Isabel.Rey@walmart.com",
+      "name": "Isabel Rey",
+      "adoptables": []
+    },
+    {
+      "id": "def29ffd-fc82-4df3-9f48-cd5beea94c51",
+      "email": "Esteban.Araya2@walmart.com",
+      "name": "Esteban Araya",
+      "adoptables": []
+    },
+    {
+      "id": "b2b76a53-73f7-4c4d-860f-e2cc01074212",
+      "email": "ruben.daza@walmart.com",
+      "name": "Ruben Daza",
+      "adoptables": []
+    },
+    {
+      "id": "c22bee14-94b3-429e-8419-0fb48b07a831",
+      "email": "luz.lopez0@walmart.com",
+      "name": "Luz López",
+      "adoptables": []
+    },
+    {
+      "id": "f6d298ed-1e3e-4eaf-a3f5-113c27f7d25c",
+      "email": "enrique.casanovas@walmart.com",
+      "name": "Enrique Casanovas",
+      "adoptables": []
+    },
+    {
+      "id": "27bd45f1-030f-4ba6-8c56-bfa7eca7cb84",
+      "email": "Cesar.sanhueza@walmart.com",
+      "name": "Cesar Sanhueza",
+      "adoptables": []
+    },
+    {
+      "id": "1bd8f913-a1db-4524-95b2-485edf4fe708",
+      "email": "dayhna.guzman@walmart.com",
+      "name": "Dayhna Guzman",
+      "adoptables": []
+    },
+    {
+      "id": "abcc6ff6-fe57-40da-ae43-f810da8514f9",
+      "email": "alexis.maturana@walmart.com",
+      "name": "Alexis Maturana",
+      "adoptables": []
+    },
+    {
+      "id": "c50d6b88-c509-4210-8e71-fd00b8bf16e7",
+      "email": "diego.brante@walmart.com",
+      "name": "Diego Brante",
+      "adoptables": []
+    },
+    {
+      "id": "868d0899-363c-43ae-9c5d-ed3297c2fda6",
+      "email": "carolina.martinez1@walmart.com",
+      "name": "Carolina Martínez Pérez de Arce",
+      "adoptables": []
+    },
+    {
+      "id": "a2c7f0ed-e6ca-443a-bd1b-4e6c5b4e3f66",
+      "email": "Mariana.Fuentes@walmart.com",
+      "name": "Mariana Fuentes",
+      "adoptables": []
+    },
+    {
+      "id": "1ffae761-5445-4565-85fa-94e8275fbe1d",
+      "email": "nicolas.reyes@walmart.com",
+      "name": "Nicolás Reyes",
+      "adoptables": []
+    },
+    {
+      "id": "ec4e6595-ac4c-4817-854f-6fb3198e2d6e",
+      "email": "harshit.byranahalli@walmart.com",
+      "name": "Harshith Kumar",
+      "adoptables": []
+    },
+    {
+      "id": "6b0c0bcd-73a1-4ced-a824-590e53eaf80c",
+      "email": "sebastian.camberos@walmart.com",
+      "name": "Sebastián Camberos",
+      "adoptables": []
+    },
+    {
+      "id": "26006fd0-4e88-4922-99ef-dfde6cfac581",
+      "email": "arturo.samith@walmart.com",
+      "name": "Arturo Samith",
+      "adoptables": []
+    },
+    {
+      "id": "d59aa23e-d536-4ffe-bd2c-e4d12dcbc3b7",
+      "email": "alonso.gutierrez@walmart.com",
+      "name": "Alonso Gutierrez",
+      "adoptables": []
+    },
+    {
+      "id": "2fb2985f-4d00-4c53-9f50-1fc767241861",
+      "email": "camilo.duran@walmart.com",
+      "name": "Camilo Duran",
+      "adoptables": []
+    },
+    {
+      "id": "bf981bc4-7c53-4df0-b46d-18fcc9951f9c",
+      "email": "paulina.valenzuela@walmart.com",
+      "name": "Paulina Valenzuela",
+      "adoptables": []
+    },
+    {
+      "id": "0b5ff209-2a04-4a2a-a62d-e05533aba0ab",
+      "email": "Marcelino.Sanchez@walmart.com",
+      "name": "Jonathan Sanchez",
+      "adoptables": []
+    },
+    {
+      "id": "dc66434f-6093-4cb3-9b35-d61df6b43cf4",
+      "email": "javier.fernandez1@walmart.com",
+      "name": "Javier Fernandez",
+      "adoptables": []
+    },
+    {
+      "id": "8736cd5d-f47c-4821-b0d7-bd1b5df93a98",
+      "email": "claudio.alvarado@walmart.com",
+      "name": "Claudio Alvarado",
+      "adoptables": []
+    },
+    {
+      "id": "cb3ce93b-e963-4679-a468-2c789e9a36da",
+      "email": "andres.benavides@walmart.com",
+      "name": "Andres Benavides",
+      "adoptables": []
+    },
+    {
+      "id": "bc3fb229-4eee-43e7-b065-e44a746eec75",
+      "email": "pablo.gutierrez2@walmart.com",
+      "name": "Pablo Gutierrez",
+      "adoptables": []
+    },
+    {
+      "id": "6702ff3c-e78a-4a04-b4e7-12c68f1a45d9",
+      "email": "Juan.Perez2@walmart.com",
+      "name": "Juan Jose Perez",
+      "adoptables": []
+    },
+    {
+      "id": "9bafeb21-9b59-4426-8be2-8437107c9f76",
+      "email": "rogger.bravo@walmart.com",
+      "name": "Rogger Bravo",
+      "adoptables": []
+    },
+    {
+      "id": "1b5d453f-30b0-4ef2-82ac-1fc2322d4815",
+      "email": "mauro.sanhueza@walmart.com",
+      "name": "Mauro Sanhueza",
+      "adoptables": []
+    },
+    {
+      "id": "4a762cb1-2ad3-4ddc-b121-63745363f805",
+      "email": "francisco.benavides@walmart.com",
+      "name": "Francisco Benavides",
+      "adoptables": []
+    },
+    {
+      "id": "b6dd43dc-4171-4c10-98e2-65cc0de92efc",
+      "email": "rodrigo.navarro@walmart.com",
+      "name": "Rodrigo Navarro",
+      "adoptables": []
+    },
+    {
+      "id": "66935e6d-7d82-431b-b725-dd19d2546434",
+      "email": "joaquin.vera@walmart.com",
+      "name": "Joaquin Vera",
+      "adoptables": []
+    },
+    {
+      "id": "bd9b936c-a186-4438-ac51-494013782f98",
+      "email": "luz.parra@walmart.com",
+      "name": "Luz Elena Parra",
+      "adoptables": []
+    },
+    {
+      "id": "be97d3ad-925d-4db4-a33b-d54ad3b36dba",
+      "email": "pablo.monares@walmart.com",
+      "name": "Pablo Monares",
+      "adoptables": []
+    },
+    {
+      "id": "f467c3b3-901d-4097-a18c-afd6d18d45cd",
+      "email": "Pamela.aranguiz@walmart.com",
+      "name": "Pamela Aranguiz",
+      "adoptables": []
+    }
+  ],
+  "team_adoption": 4,
+  "team_adopters": [
+    { "name": "Barracuda", "level": 50 },
+    { "name": "Alpha", "level": 10 },
+    { "name": "PMO", "level": 20 },
+    { "name": "Spanglish", "level": 30 },
+    { "name": "Great Value", "level": 40 },
+    { "name": "Care", "level": 60 },
+    { "name": "Rapsodia", "level": 70 },
+    { "name": "Keep it simple", "level": 80 },
+    { "name": "Underworld", "level": 90 },
+    { "name": "Last Mile", "level": 100 }
+  ],
+  "team_absentees": [
+    { "name": "Conecta Más", "level": 0 },
+    { "name": "Artemis", "level": 0 },
+    { "name": "UX", "level": 0 },
+    { "name": "Alpha 2", "level": 0 },
+    { "name": "Comunicaciones", "level": 0 },
+    { "name": "Keepers", "level": 0 },
+    { "name": "Eureka", "level": 0 },
+    { "name": "IMS", "level": 0 },
+    { "name": "Operaciones", "level": 0 },
+    { "name": "Gerencia", "level": 0 },
+    { "name": "Store 9", "level": 0 },
+    { "name": "Tribe Leader", "level": 0 },
+    { "name": "Equipo 300", "level": 0 },
+    { "name": "Astronauts", "level": 0 },
+    { "name": "Avenger", "level": 0 },
+    { "name": "Blackcyber", "level": 0 },
+    { "name": "Viking 5", "level": 0 },
+    { "name": "Not Product", "level": 0 }
+  ]
+}

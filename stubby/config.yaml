@@ -1,0 +1,19 @@
+- request:
+    url: ^/adoptables$
+    method: GET
+  response:
+    - status: 200
+      headers:
+        content-type: application/json
+        server: stubbedServer/4.2
+      file: adoptables.json
+
+- request:
+    url: ^/adoptables/.*/adoption$
+    method: GET
+  response:
+    - status: 200
+      headers:
+        content-type: application/json
+        server: stubbedServer/4.2
+      file: adoption.json
