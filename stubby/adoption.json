@@ -1,4 +1,18 @@
 {
+  "adoptable": {
+    "id": "a78a60d1-b8d6-450f-828e-13e4455b6174",
+    "labels": [
+      {
+        "kind": "Technical Owner",
+        "value": "Strati"
+      },
+      {
+        "kind": "Type",
+        "value": "Tool"
+      }
+    ],
+    "name": "Looper"
+  },
   "adoption": 0,
   "level": 0,
   "adopters": [

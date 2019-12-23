@@ -21,6 +21,7 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             fetching: false,
+            adoptable: action.item.adoptable,
             adoption: action.item.adoption,
             adopters: action.item.adopters,
             absentees: action.item.absentees,

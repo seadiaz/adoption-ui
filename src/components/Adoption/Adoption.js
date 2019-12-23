@@ -88,8 +88,8 @@ class Adoption extends Component {
 
         return (
             <Fragment>
-                <div className="f-subheadline lh-title tc mt4"><b>{this.props.adoption}</b></div>
-                <div className="f-subheadline lh-title tc mt4">Adoption level: <b>{this.props.adoption}%</b></div>
+                <div className="f1 lh-title tc mt4"><b>{this.props.adoptable ? this.props.adoptable.name : null}</b></div>
+                <div className="f2 lh-title tc mt4">Adoption level: <b>{this.props.adoption}%</b></div>
                 <div className="fl w-100 ph4 mt4">
                     <div className="dib v-mid">Teams</div>
                     <Switch

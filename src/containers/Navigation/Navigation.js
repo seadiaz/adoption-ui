@@ -23,6 +23,7 @@ class Navigation extends Component {
                 absentees={this.props.adoption.absentees}
                 teamAdopters={this.props.adoption.teamAdopters}
                 teamAbsentees={this.props.adoption.teamAbsentees}
+                adoptable={this.props.adoption.adoptable}
             />
 
         return (
